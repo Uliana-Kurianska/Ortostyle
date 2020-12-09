@@ -1,0 +1,28 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+    color: 15171A;
+}
+.block_main {
+    background-image: url(../img/smile-main.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    text-decoration: none;
+    color: white;
+}
+.block_main div {
+    display: block;
+    padding: 300px;
+}
+ 
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: 15171A;
+    width: 200px;
+    border: 1px solid transparent;
+}
+
+h1 {
+     font-weight: bold;
+}
