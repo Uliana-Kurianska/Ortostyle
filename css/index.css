@@ -1,6 +1,6 @@
 :root {
     font-family: 'Montserrat', sans-serif;
-    color: 15171A;
+    color: black;
 }
 .block_main {
     background-image: url(../img/smile-main.jpg);
@@ -18,11 +18,55 @@
 .menu a {
     display: block;
     text-decoration: none;
-    color: 15171A;
+    color: black;
     width: 200px;
     border: 1px solid transparent;
 }
 
 h1 {
      font-weight: bold;
+}
+
+.block_services img {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.simple_form {
+    background-image: url(../img/smile-boy-in-the-hat.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    margin: 100px 0 0 0;
+}
+h2 {
+    text-align: center;
+}
+.block_advantage img {
+    max-width: 40px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.block_advantage p {
+    text-align: center
+}
+
+#full {
+    background-image: url(../img/girl-with-ring.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    
+}
+
+.social_networks img {
+    max-width: 30px;
+    display: block;
+    margin: auto;
+    padding: 10px;
 }
