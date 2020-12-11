@@ -2,6 +2,10 @@
     font-family: 'Montserrat', sans-serif;
     --main-color: black;   
 }
+body {
+    max-width: 1440;
+    margin: auto;
+}
 
 .block_main {
     background-image: url(../img/smile-main.jpg);
@@ -33,6 +37,8 @@ nav {
 
 .burger-icon {
     font-size: 2rem;
+    display: inline-flex;
+    align-self: flex-end;
 }
 
 #burger-checkbox {
@@ -40,11 +46,14 @@ nav {
 }
 
 .menu a {
-    display: block;
+    display: flex;
+    justify-content: end;
     text-decoration: none;
     color: white;
-    width: 200px;
-    border: 1px solid transparent;
+    width: 110px;
+
+    /* border: 1px solid transparent; */
+
 }
 
 .menu a:hover {
@@ -60,7 +69,7 @@ header nav input:checked ~ .menu {
     display: block;
 }
 
-@media (min-width: 1070px) {
+@media (min-width: 700px) {
     .burger-icon {
         display: none;
     }
