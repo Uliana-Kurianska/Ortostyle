@@ -2,6 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
+
 .block_main {
     background-image: url(../img/smile-main.jpg);
     background-size: cover;
@@ -10,21 +11,77 @@
     text-decoration: none;
     color: white;
 }
+
 .block_main div {
     display: block;
     padding: 300px;
 }
- 
+
+nav {
+    background: black;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+ .logo {
+     font-size: 28px;
+ } 
+
+.burger-icon {
+    font-size: 2rem;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
 .menu a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     width: 200px;
     border: 1px solid transparent;
 }
 
+.menu a:hover {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+header nav .menu {
+    display: none;
+}
+
+header nav input:checked ~ .menu {
+    display: block;
+}
+
+@media (min-width: 650px) {
+    .burger-icon {
+        display: none;
+    }
+
+    header nav input:checked ~ .menu {
+        display: flex;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header nav .menu {
+        display: flex;
+        /* flex: 1; */
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
 h1 {
-     font-weight: bold;
+    font-weight: bold;
 }
 
 .block_services img {
@@ -34,7 +91,6 @@ h1 {
     padding: 10px;
 }
 
-
 .simple_form {
     background-image: url(../img/smile-boy-in-the-hat.jpg);
     background-size: cover;
@@ -42,9 +98,11 @@ h1 {
     min-height: 300px;
     margin: 100px 0 0 0;
 }
+
 h2 {
     text-align: center;
 }
+
 .block_advantage img {
     max-width: 40px;
     display: block;
@@ -61,7 +119,6 @@ h2 {
     background-size: cover;
     background-position: center;
     min-height: 500px;
-    
 }
 
 .social_networks img {
