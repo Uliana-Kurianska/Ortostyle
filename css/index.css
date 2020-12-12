@@ -22,17 +22,17 @@ body {
 }
 
 nav {
-    background: (--main-color);
+    background: black;
     color: white;
     width: 100%;
-    height: 50px;
+    height: 110px;
     position: fixed;
     top: 0;
     left: 0;
 }
- .logo {
-     font-size: 28px;
-     padding: 8px 0 0 8px;
+ .logo img{
+     width: 150px;
+     height: 110px;
  } 
 
 .burger-icon {
@@ -51,9 +51,6 @@ nav {
     text-decoration: none;
     color: white;
     width: 110px;
-
-    /* border: 1px solid transparent; */
-
 }
 
 .menu a:hover {
@@ -138,4 +135,57 @@ h2 {
     display: block;
     margin: auto;
     padding: 10px;
+}
+
+.sign-up-online {
+    width: 120px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: unset;
+    color: white;
+}
+
+.sign-up-online:hover {
+    background-color: black;
+    color: rgb(112, 240, 53);
+    border: 3px solid rgb(112, 240, 53);
+}
+
+.block_contacts {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 0 0;
+    text-align: center;
+    
+}
+
+.location {
+   border: 2px solid rgb(15, 15, 15);
+   width: 25%;
+   border-radius: 5px;
+}
+
+.contacts { 
+   border: 2px solid rgb(15, 15, 15);
+   width: 32%;
+   border-radius: 5px;
+}
+
+.hours {
+   border: 2px solid rgb(15, 15, 15);
+   width: 25%;
+   border-radius: 5px;
+   
+}
+
+.block_contacts button {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 892) {
+    .block_contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
