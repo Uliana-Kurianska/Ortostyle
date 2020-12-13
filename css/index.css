@@ -5,7 +5,7 @@
 body {
     max-width: 1080px;
     margin: auto;
-    background-color:  #F7F9FB;
+    
 }
 
 .block_main {
@@ -27,9 +27,9 @@ nav {
     color: white;
     width: 100%;
     height: 110px;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
 }
  .logo img{
      width: 150px;
@@ -95,53 +95,32 @@ header nav input:checked ~ .menu {
 }
 
 h1 {
+    font-size: 42px;
     font-weight: bold;
 }
 
-.block_services img {
-    max-width: 200px;
-    display: block;
-    margin: auto;
-    padding: 10px;
+section .block_services {
+margin-top: 50px;
+background-color: #E5E5E5;
 }
 
-.simple_form {
-    background-image: url(../img/orthostyle-2019.jpg);
-    background-size: cover;
-    background-position: center;
-    
-    min-height: 300px;
-    margin: 100px 0 0 0;
-}
+ .dental-services img {
+  max-width: 100%;
+ }
+ .dental-services > div p {
+     font-size: 22px;
+     font-weight: medium;
+     text-align: center;
+     margin: 10px 0;
+ }
+
 
 h2 {
+    font-size: 36px;
+    font-weight: bold;
     text-align: center;
 }
 
-.block_advantage img {
-    max-width: 40px;
-    display: block;
-    margin: auto;
-    padding: 10px;
-}
-
-.block_advantage p {
-    text-align: center
-}
-
-#full {
-    background-image: url(../img/orthostyle-table-2019.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 500px;
-}
-
-.social_networks img {
-    max-width: 30px;
-    display: block;
-    margin: auto;
-    padding: 10px;
-}
 
 .sign-up-online {
     width: 120px;
@@ -160,21 +139,15 @@ h2 {
 }
 
 
-.location {
+.block_contacts > div {
+   background-color: white;
+   display: block;
    border: 2px solid rgb(15, 15, 15);
    border-radius: 5px;
+   text-align: center;
+   margin: 20px 0;
 }
 
-.contacts { 
-   border: 2px solid rgb(15, 15, 15);
-   border-radius: 5px;
-}
-
-.hours {
-   border: 2px solid rgb(15, 15, 15);
-   border-radius: 5px;
-   
-}
 
 .block_contacts button {
     margin-bottom: 10px;
@@ -191,9 +164,9 @@ h2 {
         display: grid;
         grid-template-columns: 1fr;
         margin: 50px 10px;
-    align-self: center;
-    text-align: center;
-        
+        align-self: center;
+        text-align: center;
+       
     }
 }
 
@@ -201,16 +174,104 @@ h2 {
     .block_contacts {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-         grid-column-gap: 10px;
-    margin: 50px 10px;
-    align-self: center;
-    text-align: center;
-   
+        grid-column-gap: 10px;
+        margin: 50px 10px;
+        align-self: center;
+        text-align: center;
     }
+         .dental-services {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     
+     align-items: center;
+     justify-self: center;
+ }
+    
 }
 
 .block_contacts button:hover {
     background-color: black;
     color: #BADA55;
 }
+
+.simple_form {
+    margin-top: 50px;
+    position: relative;
+    background: rgb(15, 16, 17);
+    overflow: hidden;
+}
+
+.simple_form .perfect-smile {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    color: white;  
+}
+
+.simple_form:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.8;
+    background-image: url(../img/orthostyle-2019.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#get-a-callback {
+    background-color: #BADA55;
+    color: black;
+    border: 1px solid #BADA55;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#get-a-callback:hover {
+    background-color: black;
+    color: #BADA55;
+}
+ container .block_about{
+background-color: black;
+background-position: cover;
+color: white;
+margin-top: 0;
+ }
+ 
+
+
+.block_advantage img {
+    max-width: 40px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.block_advantage p {
+    text-align: center;
+}
+
+#full {
+    background-image: url(../img/orthostyle-table-2019.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.social_networks img {
+    max-width: 30px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
 
