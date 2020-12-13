@@ -3,8 +3,9 @@
     --main-color: black;   
 }
 body {
-    max-width: 1440;
+    max-width: 1080px;
     margin: auto;
+    background-color:  #F7F9FB;
 }
 
 .block_main {
@@ -41,6 +42,10 @@ nav {
     align-self: flex-end;
 }
 
+.burger-icon:hover {
+    color: #BADA55;
+}
+
 #burger-checkbox {
     display: none;
 }
@@ -55,7 +60,7 @@ nav {
 
 .menu a:hover {
     font-weight: bold;
-    text-decoration: line-through;
+    color: #BADA55;
 }
 
 header nav .menu {
@@ -66,7 +71,7 @@ header nav input:checked ~ .menu {
     display: block;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 730px) {
     .burger-icon {
         display: none;
     }
@@ -101,9 +106,10 @@ h1 {
 }
 
 .simple_form {
-    background-image: url(../img/smile-boy-in-the-hat.jpg);
+    background-image: url(../img/orthostyle-2019.jpg);
     background-size: cover;
     background-position: center;
+    
     min-height: 300px;
     margin: 100px 0 0 0;
 }
@@ -124,7 +130,7 @@ h2 {
 }
 
 #full {
-    background-image: url(../img/girl-with-ring.jpg);
+    background-image: url(../img/orthostyle-table-2019.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;
@@ -144,48 +150,67 @@ h2 {
     border-radius: 5px;
     background-color: unset;
     color: white;
+    margin: 0 10px 0 0;
 }
 
 .sign-up-online:hover {
     background-color: black;
-    color: rgb(112, 240, 53);
-    border: 3px solid rgb(112, 240, 53);
+    color: #BADA55;
+    border: 3px solid #BADA55;
 }
 
-.block_contacts {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px 0 0 0;
-    text-align: center;
-    
-}
 
 .location {
    border: 2px solid rgb(15, 15, 15);
-   width: 25%;
    border-radius: 5px;
 }
 
 .contacts { 
    border: 2px solid rgb(15, 15, 15);
-   width: 32%;
    border-radius: 5px;
 }
 
 .hours {
    border: 2px solid rgb(15, 15, 15);
-   width: 25%;
    border-radius: 5px;
    
 }
 
 .block_contacts button {
     margin-bottom: 10px;
+    background-color: #BADA55;
+    color: black;
+    border: 1px solid #BADA55;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
 }
 
-@media (min-width: 892) {
+@media (min-width: 679px) {
     .block_contacts {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        margin: 50px 10px;
+    align-self: center;
+    text-align: center;
+        
     }
 }
+
+@media (min-width: 680px) {
+    .block_contacts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+         grid-column-gap: 10px;
+    margin: 50px 10px;
+    align-self: center;
+    text-align: center;
+   
+    }
+}
+
+.block_contacts button:hover {
+    background-color: black;
+    color: #BADA55;
+}
+
