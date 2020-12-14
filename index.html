@@ -68,31 +68,46 @@
 
         <section class="simple_form">
             <div class="perfect-smile">
-                <h2>Want a Perfect Smile?</h2>
-                <p>Enter your contacts and we will call you back ASAP.</p>
-                <form id="simple">
-                    <label>
-                        Phone number*
-                        <input type="number" name="user-number" placeholder="Your Phone number" required>
-                    </label>
-                    <input type="button" id= "get-a-callback" value="Get a callback">
-                </form>
+                <div>
+                    <h2>Want a Perfect Smile?</h2>
+                    <p>Enter your contacts and we will call you back ASAP.</p>
+                    <form id="simple">
+                        <div class="form-group">
+                            <label>
+                                Phone number*
+                                <input type="number" name="user-number" id="phone-number"
+                                    placeholder="Your Phone number" required>
+                            </label>
+                        </div>
+                        <input type="button" id="get-a-callback" value="Get a callback">
+                    </form>
+                </div>
             </div>
         </section>
-        <container>
-        <div class="block_about">
+
+        <section class="block-about">
             <h2>About Clinic</h2>
-            <p>Pearl Dental is the perfect place that meets any dental needs. We ensure professional, yet affordable
-                dental care to all people. Our clinic has the most advanced dental tools and equipment to ensure our
-                patients receive the highest level of care.</p>
-            <ul>
-                <li>12 awards</li>
-                <li>6,433 clients per year</li>
-                <li>42,095 procedures done</li>
-            </ul>
-            <button>More about us</button>
-        </div>
-        </container>
+            <div class="block_about">
+                <div>
+                    <p>Pearl Dental is the perfect place that meets any dental needs. We ensure professional, yet
+                        affordable
+                        dental care to all people. Our clinic has the most advanced dental tools and equipment to ensure
+                        our
+                        patients receive the highest level of care.</p>
+                    <ul>
+                        <li>12 awards</li>
+                        <li>6,433 clients per year</li>
+                        <li>42,095 procedures done</li>
+                    </ul>
+                    <button>More about us</button>
+                </div>
+
+                <div>
+                    <img src="img/clinic-cabinet.png" alt="Clinic Cabinet">
+                </div>
+            </div>
+        </section>
+
         <div class="block_advantage">
             <div>
                 <img src="img/icons/hospital.png" alt="Hospital">
@@ -112,26 +127,30 @@
             </div>
         </div>
         <form id="full">
-            <label>
-                Your name*
-                <input type="text" name="user-name" placeholder="Your name" required>
-            </label>
-            <br>
-            <label>
-                Phone number*
-                <input type="number" name="user-number" placeholder="Your Phone number" required>
-            </label>
-            <br>
-            <label>
-                Your email*
-                <input type="email" name="user-email" placeholder="Your email" required>
-            </label>
-            <br>
-            <label>
-                Your message:
-                <textarea name="message" placeholder="Your message" required></textarea>
-            </label>
-            <br>
+            <div class="form-group">
+                <label>
+                    Your name*
+                    <input type="text" name="user-name" placeholder="Your name" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Phone number*
+                    <input type="number" name="user-number" placeholder="Your Phone number" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Your email*
+                    <input type="email" name="user-email" placeholder="Your email" required>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Your message:
+                    <textarea name="message" placeholder="Your message" required></textarea>
+                </label>
+            </div>
             <input type="button" value="Send Request">
         </form>
     </main>

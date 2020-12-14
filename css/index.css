@@ -1,11 +1,10 @@
 :root {
     font-family: 'Montserrat', sans-serif;
-    --main-color: black;   
-}
+    --main-color: black; }
+
 body {
     max-width: 1080px;
     margin: auto;
-    
 }
 
 .block_main {
@@ -26,15 +25,13 @@ nav {
     background: black;
     color: white;
     width: 100%;
-    height: 110px;
-    /* position: fixed;
-    top: 0;
-    left: 0; */
+    height: 110px;   
 }
- .logo img{
-     width: 150px;
-     height: 110px;
- } 
+
+.logo img {
+    width: 150px;
+    height: 110px;
+}
 
 .burger-icon {
     font-size: 2rem;
@@ -90,8 +87,6 @@ header nav input:checked ~ .menu {
         flex: 1 3;
         align-items: center;
     }
-
-    
 }
 
 h1 {
@@ -99,28 +94,22 @@ h1 {
     font-weight: bold;
 }
 
-section .block_services {
-margin-top: 50px;
-background-color: #E5E5E5;
+.dental-services img {
+    max-width: 100%;
 }
 
- .dental-services img {
-  max-width: 100%;
- }
- .dental-services > div p {
-     font-size: 22px;
-     font-weight: medium;
-     text-align: center;
-     margin: 10px 0;
- }
-
+.dental-services > div p {
+    font-size: 22px;
+    font-weight: medium;
+    text-align: center;
+    margin: 10px 0;
+}
 
 h2 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
 }
-
 
 .sign-up-online {
     width: 120px;
@@ -138,21 +127,26 @@ h2 {
     border: 3px solid #BADA55;
 }
 
-
-.block_contacts > div {
-   background-color: white;
-   display: block;
-   border: 2px solid rgb(15, 15, 15);
-   border-radius: 5px;
-   text-align: center;
-   margin: 20px 0;
+.block_contacts {
+    background-color: #15171A;
+    background-size: cover;
+    margin: 0;
 }
 
+.block_contacts > div {
+    background-color: white;
+    display: block;
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0;
+}
 
 .block_contacts button {
     margin-bottom: 10px;
     background-color: #BADA55;
     color: black;
+    font-weight: bold;
     border: 1px solid #BADA55;
     width: 120px;
     height: 35px;
@@ -163,10 +157,14 @@ h2 {
     .block_contacts {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 50px 10px;
+        padding: 50px 10px;
+        margin: 0;
         align-self: center;
         text-align: center;
-       
+    }
+
+    .block_contacts > div {
+        margin-top: 0;
     }
 }
 
@@ -175,23 +173,24 @@ h2 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 10px;
-        margin: 50px 10px;
+        padding: 50px 10px;
+        margin: 0;
         align-self: center;
         text-align: center;
     }
-         .dental-services {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     
-     align-items: center;
-     justify-self: center;
- }
-    
+
+    .dental-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-self: center;
+    }
 }
 
 .block_contacts button:hover {
     background-color: black;
     color: #BADA55;
+    font-weight: bolder;
 }
 
 .simple_form {
@@ -205,7 +204,7 @@ h2 {
     padding: 20px;
     position: relative;
     z-index: 2;
-    color: white;  
+    color: white;
 }
 
 .simple_form:before {
@@ -217,16 +216,31 @@ h2 {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 0.4;
     background-image: url(../img/orthostyle-2019.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+}
+
+.perfect-smile {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    display: block;
+    margin: 10px 0;
+}
+
+#phone-number {
+    display: block;
+    width: 300px;
 }
 
 #get-a-callback {
     background-color: #BADA55;
+    font-weight: bold;
     color: black;
     border: 1px solid #BADA55;
     width: 120px;
@@ -237,15 +251,26 @@ h2 {
 #get-a-callback:hover {
     background-color: black;
     color: #BADA55;
+    font-weight: bolder;
 }
- container .block_about{
-background-color: black;
-background-position: cover;
-color: white;
-margin-top: 0;
- }
- 
 
+ .block_about {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    background-color: black;
+    background-position: cover;
+    color: white;
+    min-height: 500px;
+}
+
+.block_about img {
+
+}
+
+.block_about h2 {
+    margin: 0;
+    padding-top: 50px;
+}
 
 .block_advantage img {
     max-width: 40px;
@@ -271,7 +296,3 @@ margin-top: 0;
     margin: auto;
     padding: 10px;
 }
-
-
-
-
