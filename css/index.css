@@ -25,7 +25,7 @@ nav {
     background: black;
     color: white;
     width: 100%;
-    height: 110px;   
+    height: 110px;
 }
 
 .logo img {
@@ -163,16 +163,15 @@ h2 {
 }
 
 .text-about {
-text-align: justify;
-font-size: 18px;
-line-height: 26px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 26px;
 }
 
- .more-about-us {
+.more-about-us {
     background-color: #BADA55;
     font-weight: bold;
     color: black;
-    border: 1px solid #BADA55;
     width: 120px;
     height: 35px;
     border-radius: 5px;
@@ -180,11 +179,9 @@ line-height: 26px;
 }
 
 .block_advantage {
-    background-color: rgb(198, 195, 201);
+    background-color: rgb(238, 235, 241);
     font-size: 14px;
     padding: 50px 20px;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .block_advantage img {
@@ -192,14 +189,16 @@ line-height: 26px;
     display: block;
     margin: auto;
     padding: 10px;
-    
+    color: #BADA55;
 }
 
 .block_advantage p {
     text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
 }
 
-@media (min-width: 679px) {
+@media (min-width: 680px) {
     .block_contacts {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -214,20 +213,20 @@ line-height: 26px;
     }
 
     .block_about {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      grid-column-gap: 20px; 
-      grid-row-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
+
+    .block_advantage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
 }
 
-.block_advantage {
-    display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      grid-column-gap: 20px; 
-}
-}
-
-@media (min-width: 680px) {
+@media (min-width: 900px) {
     .block_contacts {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -246,18 +245,18 @@ line-height: 26px;
     }
 
     .block_about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;  
-    grid-column-gap: 10px; 
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
 
-.block_advantage {
-    display: grid;
-      grid-template-columns: repeat(4, 1fr); 
-      grid-column-gap: 20px; 
+    .block_advantage {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        align-self: center;
+    }
 }
-}
-
 
 .block_contacts button:hover {
     background-color: black;
@@ -314,7 +313,6 @@ line-height: 26px;
     background-color: #BADA55;
     font-weight: bold;
     color: black;
-    border: 1px solid #BADA55;
     width: 120px;
     height: 35px;
     border-radius: 5px;
@@ -326,11 +324,8 @@ line-height: 26px;
     font-weight: bolder;
 }
 
-
-
 .block-about img {
-width: 100%;
-
+    width: 100%;
 }
 
 .more-about-us:hover {
@@ -339,13 +334,61 @@ width: 100%;
     font-weight: bolder;
 }
 
+.full_form {
+    margin-top: 0;
+    padding: 50px 0;
+    position: relative;
+    background: rgb(15, 16, 17);
+    overflow: hidden;
+}
 
+.full_form .free-consultation {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
 
-#full {
+.full_form:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
     background-image: url(../img/orthostyle-table-2019.jpg);
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    min-height: 500px;
+    background-size: cover;
+}
+
+#send-request {
+    background-color: #BADA55;
+    font-weight: bold;
+    color: black;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#send-request:hover {
+    background-color: black;
+    color: #BADA55;
+    font-weight: bolder;
+}
+
+footer {
+    margin: 0;
+    background-color: #15171A;
+    color: white;
+}
+
+.free-consultation {
+    display: flex;
+    justify-content: center;
 }
 
 .social_networks img {
@@ -353,4 +396,5 @@ width: 100%;
     display: block;
     margin: auto;
     padding: 10px;
+    color: white;
 }
