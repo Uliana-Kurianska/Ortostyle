@@ -153,10 +153,56 @@ h2 {
     border-radius: 5px;
 }
 
+.block-about {
+    background-color: black;
+    background-position: cover;
+    color: white;
+    margin: 0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.text-about {
+text-align: justify;
+font-size: 18px;
+line-height: 26px;
+}
+
+ .more-about-us {
+    background-color: #BADA55;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #BADA55;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.block_advantage {
+    background-color: rgb(198, 195, 201);
+    font-size: 14px;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.block_advantage img {
+    max-width: 30px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.block_advantage p {
+    text-align: center;
+}
+
 @media (min-width: 679px) {
     .block_contacts {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         padding: 50px 10px;
         margin: 0;
         align-self: center;
@@ -166,13 +212,26 @@ h2 {
     .block_contacts > div {
         margin-top: 0;
     }
+
+    .block_about {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-column-gap: 20px; 
+      grid-row-gap: 10px;
+}
+
+.block_advantage {
+    display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-column-gap: 20px; 
+}
 }
 
 @media (min-width: 680px) {
     .block_contacts {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 10px;
+        grid-column-gap: 20px;
         padding: 50px 10px;
         margin: 0;
         align-self: center;
@@ -185,7 +244,20 @@ h2 {
         align-items: center;
         justify-self: center;
     }
+
+    .block_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-column-gap: 10px; 
 }
+
+.block_advantage {
+    display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      grid-column-gap: 20px; 
+}
+}
+
 
 .block_contacts button:hover {
     background-color: black;
@@ -254,34 +326,20 @@ h2 {
     font-weight: bolder;
 }
 
- .block_about {
-    display: grid;
-    grid-template-columns: 50% 40%;
+
+
+.block-about img {
+width: 100%;
+
+}
+
+.more-about-us:hover {
     background-color: black;
-    background-position: cover;
-    color: white;
-    min-height: 500px;
+    color: #BADA55;
+    font-weight: bolder;
 }
 
-.block_about img {
 
-}
-
-.block_about h2 {
-    margin: 0;
-    padding-top: 50px;
-}
-
-.block_advantage img {
-    max-width: 40px;
-    display: block;
-    margin: auto;
-    padding: 10px;
-}
-
-.block_advantage p {
-    text-align: center;
-}
 
 #full {
     background-image: url(../img/orthostyle-table-2019.jpg);
