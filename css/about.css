@@ -1,3 +1,9 @@
+.burger-icon {
+    position: relative;
+    z-index: 2;
+}
+
+
 .block_main_about {
     
     position: relative;
@@ -34,6 +40,27 @@
     background-size: cover;
 }
 
-.burger-icon {
+.carousel {
+    background-color: black;
+    padding: 50px 0;
     color: white;
+
 }
+
+.carousel img {
+    
+    width: 100%;
+    height: 100%;
+}
+
+container {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 500px;
+    
+}
+
+    
+
+  
