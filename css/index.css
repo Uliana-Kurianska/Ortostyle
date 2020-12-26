@@ -381,21 +381,60 @@ h2 {
     font-weight: bolder;
 }
 
-footer {
-    margin: 0;
-    background-color: #15171A;
-    color: white;
-}
-
 .free-consultation {
     display: flex;
     justify-content: center;
 }
 
-.social_networks img {
-    max-width: 30px;
-    display: block;
-    
-    padding: 10px;
+
+footer {
+    margin: 0;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 25% 25%;
+    background-color: #15171A;
     color: white;
 }
+
+.social_networks div{
+    margin: 10px 0;
+
+}
+ h3 {
+     margin: 0;
+ }
+
+.social_networks h4 {
+    margin: 0 5px;
+}
+
+.social_networks img {
+    width: 25px;
+    min-height: 25px;
+    display: flex;
+    justify-self: start;
+    color: white;
+    margin: 5px;
+}
+
+.social_networks  div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu_footer a {
+   display: block;
+   text-decoration: none;
+   color: white;   
+   margin: 5px; 
+}
+
+.icons {
+    display: flex;
+    justify-self: start;
+    width: 50px;
+}
+
+
+
