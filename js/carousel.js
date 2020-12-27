@@ -1,12 +1,16 @@
 {
     const images = [
-        'img/gallery-1.jpg',
-        'img/gallery-2.jpg',
-        'img/gallery-3.jpg',
-        'img/gallery-4.jpg',
-        'img/gallery-5.jpg',
-        'img/gallery-6.jpg',
-        'img/orthostyle-for-kids.jpg'
+        'img/gallery-01.png',
+        'img/gallery-02.png',
+        'img/gallery-03.png',
+        'img/gallery-04.png',
+        'img/gallery-05.png',
+        'img/gallery-06.png',
+        'img/gallery-07.png',
+        'img/gallery-08.png',
+        'img/gallery-09.png',
+        'img/gallery-10.png',
+        
     ]
 
     let currentIdx = 0;

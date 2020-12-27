@@ -36,3 +36,26 @@
   opacity: 0.7;
   border-radius: 50%;
 }
+
+/* .compair {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+} */
+
+@media (min-width: 960px) {
+    .compair {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    }
+}
+
+@media (min-width: 680px) {
+    .compair {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+}

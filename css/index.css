@@ -225,6 +225,12 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 20px;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -401,7 +407,8 @@ footer {
     margin: 0;
     padding: 50px 50px;
     display: grid;
-    grid-template-columns: 1fr 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
     background-color: #15171A;
     color: white;
 }
