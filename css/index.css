@@ -415,6 +415,7 @@ footer {
     justify-self: start;
     color: white;
     margin: 5px;
+   
 }
 
 .social_networks  div{
@@ -428,6 +429,7 @@ footer {
    text-decoration: none;
    color: white;   
    margin: 5px; 
+   font-size: 16px;
 }
 
 .icons {
@@ -436,5 +438,26 @@ footer {
     width: 50px;
 }
 
+.ortho p {
+    font-size: 14px;
+}
+ 
+#facebook {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+#instagram {
+   display: block;
+    width: 25px;
+    height: 25px;
+}
+
+#youtube {
+   display: block;
+    width: 25px;
+    height: 25px;
+}
 
 

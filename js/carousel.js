@@ -4,6 +4,8 @@
         'img/gallery-2.jpg',
         'img/gallery-3.jpg',
         'img/gallery-4.jpg',
+        'img/gallery-5.jpg',
+        'img/gallery-6.jpg',
         'img/orthostyle-for-kids.jpg'
     ]
 
@@ -25,7 +27,7 @@
         showCurrent();
     }
 
-    setInterval(showNext, 3000);
+    // setInterval(showNext, 3000);
     document.querySelector('.carousel .next').addEventListener('click', showNext);
     document.querySelector('.carousel .prev').addEventListener('click', showPrev);
     showCurrent();
