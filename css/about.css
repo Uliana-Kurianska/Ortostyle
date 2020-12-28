@@ -1,7 +1,18 @@
 .burger-icon {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
+
+.menu a {
+    position: relative;
+    z-index: 3;
+    
+ }
+
+ .sign-up-online {
+    position: relative;
+    z-index: 3; 
+ }
 
 .block_main_about {
      position: relative;

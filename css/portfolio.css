@@ -1,16 +1,30 @@
 .before_after {
-    background-color: #F5F6F7;
+    background-color:#15171A;
     text-align: center;
     margin: 0;
     padding: 50px 20px;
 }
+ .menu a {
+    position: relative;
+    z-index: 2;
+    
+ }
 
+ .sign-up-online {
+    position: relative;
+    z-index: 2; 
+ }
+
+ h1 {
+     color: white;
+ }     
+ 
 
 * {box-sizing: border-box;}
 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 200px; 
 }
 
 .img-comp-img {
@@ -37,25 +51,21 @@
   border-radius: 50%;
 }
 
-/* .compair {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-} */
-
-@media (min-width: 960px) {
-    .compair {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    }
-}
-
 @media (min-width: 680px) {
     .compair {
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     }
 }
+
+
+@media (min-width: 960px) {
+    .compair {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    }
+}
+
+
