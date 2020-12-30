@@ -68,4 +68,8 @@
     }
 }
 
-
+.explanation {
+    display: block;
+    color: white;
+    text-align: start;
+}
