@@ -13,10 +13,17 @@
         
     ]
 
-    let currentIdx = 0;
+        let currentIdx = 0;
     function showCurrent() {
-        const imgElement = document.querySelector('.carousel .current-img');
-        imgElement.src = images[currentIdx];
+        const imgElement1 = document.querySelector('.carousel .img1');
+        const imgElement2 = document.querySelector('.carousel .img2');
+        const imgElement3 = document.querySelector('.carousel .img3');
+        const idx2 = currentIdx + 1 >= images.length ? 0 : currentIdx + 1;
+        const idx3 = idx2 + 1 >= images.length ? 0 : idx2 + 1;
+        console.log(currentIdx, idx2, idx3);
+        imgElement1.src = images[currentIdx];
+        imgElement2.src = images[idx2];
+        imgElement3.src = images[idx3];
     }
 
     function showNext() {
