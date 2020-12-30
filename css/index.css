@@ -141,16 +141,16 @@ h2 {
 }
 
 .modal-content {
-  background-color: #f4f4f4;
+  background-color: #15171A;
   margin: 20% auto;
   padding: 20px;
-  width: 50%;
+  width: 400px;
   color: #000;
   border-radius: 5px;
 }
 
 .closeBtn {
-  color: #ccc;
+  color: #3b3838;
   float: right;
   font-size: 30px;
 }
@@ -170,11 +170,12 @@ h2 {
 
 .modal-header h3 {
   margin: 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #15171A;
 }
 
 .modal_content p {
     font-weight: bolder;
+    color: white;
 }
 
 .modal-form div {
@@ -187,6 +188,7 @@ h2 {
 }
 .modal_content {
     padding: 10px;
+    color: white;
 }
 .modal-form .form-input {
   padding: 5px;
@@ -207,6 +209,12 @@ h2 {
   background-color: black;
   color: #BADA55;
   font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+    .modal-content {
+        width: 320px;
+    }
 }
 
 .block_contacts {
